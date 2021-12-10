@@ -53,7 +53,7 @@ let updateActors = function (data_movie) {
 
 try {
 
-    // Película con id:2 (1pto)
+    //Película con id:2 (1pto)
     data_movie.req = { id: 2 };
     getMovieId(data_movie);
 
@@ -61,28 +61,28 @@ try {
     data_movie.req = { id: 2 };
     removeMovie(data_movie);
 
-    // Añade una nueva película (1pto)
-    data_movie.req = new_movie;
-    createMovie(data_movie);
+    // // Añade una nueva película (1pto)
+    // data_movie.req = new_movie;
+    // createMovie(data_movie);
 
-    // Modifica la película con id:3 (1pto)
-    data_movie.req = new_movie_update;
-    updateMovie(data_movie);
+    // // Modifica la película con id:3 (1pto)
+    // data_movie.req = new_movie_update;
+    // updateMovie(data_movie);
 
     //Devuelve todas las peliculas (1pto)
-    allMovies(data_movie);
+    // allMovies(data_movie);
 
     //Todas las peliculas del año 1994 (1pto)
-    data_movie.req = { key: "year", value: 1994 };
-    getMovieBy(data_movie);
+    // data_movie.req = { key: "year", value: 1994 };
+    // getMovieBy(data_movie);
 
-    //Añadir un actor a la pelicula id:4 (1pto)
-    data_movie.req = { id: 4, value: 'Ricard el profe' };
-    updateActors(data_movie);
+    // //Añadir un actor a la pelicula id:4 (1pto)
+    // data_movie.req = { id: 4, value: 'Ricard el profe' };
+    // updateActors(data_movie);
 
-    // Película con id:20  (1pto)
-    data_movie.req = { id: 20 };
-    getMovieId(data_movie);
+    // // Película con id:20  (1pto)
+    // data_movie.req = { id: 20 };
+    // getMovieId(data_movie);
 
 
 } catch (error) {
